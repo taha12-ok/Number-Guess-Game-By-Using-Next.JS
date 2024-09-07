@@ -3,14 +3,6 @@ import { useState, useEffect, ChangeEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-interface NumberGuessingState {
-  gameStarted: boolean;
-  gameOver: boolean;
-  paused: boolean;
-  targetNumber: number;
-  userGuess: number | string;
-  attempts: number;
-}
 
 export default function NumberGuessing(): JSX.Element {
   const [gameStarted, setGameStarted] = useState<boolean>(false); 
